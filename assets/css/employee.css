@@ -1,0 +1,82 @@
+
+body{
+  background-image: url('../staticImages/paper.jpg');
+}
+#bodyContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  height: 85vh;
+  margin-top: 2vh;
+}
+#EnployeesList {
+  width: 70%;
+  border: 5px solid white;
+  margin: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.singleRequest{
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #000;
+  font-size: large;
+}
+
+#EmployeeFeedbackRequest{
+  border: 5px solid white;
+  width: 25%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#AddingNewFeed{
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 10vh;
+}
+
+#feedbox{
+  width: 80%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+button{
+  padding:1px;
+  font-size:small;
+  cursor: pointer;
+}
+
+select{
+  border: none;
+}
+
+#employeeResivedFeed{
+  border: 3px solid white;
+  margin: 10px;
+  height: 35vh;
+  border-radius: 10px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+#employeeResivedFeed::-webkit-scrollbar{
+  display: none;
+}
+
+#feedback{
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=admin.css.map */

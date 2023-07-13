@@ -1,0 +1,18 @@
+
+
+#bodyContainer{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    #EnployeesList{
+        width: 40%;
+        border: 2px solid pink;
+        background-color: aqua;
+    }
+
+    #EmployeeRequest{
+        width: 40%;
+        border: 2px solid red;
+        background-color: black;
+    }
+}

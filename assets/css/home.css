@@ -1,0 +1,37 @@
+
+
+
+#outer-container {
+  background-color:lightgray;
+  margin-left:30%;
+  margin-top: 4%;
+  margin-right: 30%;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 2%;
+  box-shadow: 5px 5px 2px grey;
+}
+
+input{
+  width: 80%;
+  padding: 8px;
+}
+
+
+#btns{
+  font-size: large;
+  width:fit-content;
+}
+
+
+a{
+  text-decoration: none;
+  font-size:large;
+  color: black;
+  margin: 10%;
+}
+p{
+  /* margin: 7px; */
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,52 @@
+
+<!-- LINKING WITH CSS FILE -->
+<link rel="stylesheet" href="/css/admin.css">
+<!-- HEADER FOR ADMIN PAGE -->
+<%- include('./headerPart.ejs')%>
+
+<!-- ALL EMPLOYEES LIST  -->
+<div id="bodyContainer">
+    <div id="EnployeesList">
+        <h3>Employees</h3>
+        <div id="employeeslist">
+            <% for(let val of Emp){%>
+                <%if(user.UserName !== val.UserName){%>
+                <div class="singleRequest1" id="ha-<%=val._id%>">
+                    <div class="inner1">
+                        <p id="Username-<%=val._id%>"><%=val.UserName%></p>
+                        <p id="email-<%=val._id%>"><%=val.Email%></p>
+                        <p id="desig-<%=val._id%>"><%=val.designation%></p>
+                    </div>
+                    <div class="inner1">
+                        <p id="oar-<%=val._id%>">Over all Rate : <%=val.OverAllRate%></p>
+                        <button class="Update" id="<%=val._id%>"onclick="outerUpdate(`<%=val._id%>`)" >Update</button>
+                        <button id="<%=val._id%>" class="DeleteEmployeeBtn">Delete</button>
+                    </div>
+                    <div id="update-<%=val._id%>">
+
+                    </div>
+                </div>
+                <%}%>
+            <%}%>
+        </div>
+    </div>
+    
+
+<!-- NEWLY REGISTERED EMPLOYEES -->
+    <div id="EmployeeRequest">
+        <h3>Requests</h3>
+        <div id="requestslist">
+            <% for(let val of rgtrEmp){%>
+                <div class="singleRequest" id="<%=val._id%>">
+                <p><%=val.UserName%></p>
+                <p>
+                    <button id="<%=val._id%>" class="AddEmployeeBtn">Add</button>
+                </p>
+                </div>
+                
+            <%}%>
+        </div>
+    </div>
+</div>
+<!-- LINKING WITH JAVACRIPT FILE -->
+<script src="/js/admin.js"></script>

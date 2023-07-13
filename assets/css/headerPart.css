@@ -1,0 +1,22 @@
+#outerPart{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px grey;
+  margin: 0px;
+  color: white;
+  /* background-color: lightgrey; */
+  padding: 5px;
+  background-image: url('../staticImages/bckImg.jpg'); 
+}
+
+
+#innerPart{
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+ #lgt{
+  color: white;
+  text-decoration: none;
+} 
+/*# sourceMappingURL=headerPart.css.map */

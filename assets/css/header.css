@@ -1,0 +1,50 @@
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 98.5%;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px lightgray;
+  border: 1px solid lightgrey;
+  background-color: whitesmoke;
+  margin: 0px;
+}
+
+#sign-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+
+.pageLinks {
+  color: black;
+  text-decoration: none;
+  font-size:large;
+  cursor: pointer;
+}
+
+
+body{
+  background-color:white;
+  background-image: url('../staticImages/bckImg.jpg');
+}
+
+.sap{
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid pink; */
+  justify-content: space-between;
+}
+
+.outerDiv{
+  /* border: 2px solid black; */
+  display:flex;
+}
+
+.innerDiv{
+  /* border: 2px solid greenyellow; */
+  width: 100%;
+}
+
+
+/*# sourceMappingURL=header.css.map */

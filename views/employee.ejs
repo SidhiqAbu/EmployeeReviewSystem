@@ -1,0 +1,52 @@
+
+<!-- LINKING WITH CSS FILES -->
+<link rel="stylesheet" href="/css/employee.css">
+<!-- LINKING WITH HEADER PART OF EMPLOYEE PAGE -->
+<%- include('./headerPart.ejs')%>
+<!-- CONTAINER CONTAINS EMPLOYEE FULL DETAILS AND FEEDBACK -->
+<div id="bodyContainer">
+    <div id="EnployeesList">
+        <h3>Employee Details</h3>
+        <div id="employeeslist">
+                <div class="singleRequest">
+                <p>Name : <%=user.UserName%></p>
+                <p>Email : <%=user.Email%></p>
+                </div>
+                <div class="singleRequest">
+                <p>Status : <%=user.designation%><p>
+                <p>Over all Rating : <%=user.OverAllRate%></p>
+                </div>  
+        </div>
+        <h3>Performance Review</h3>
+        <div id="employeeResivedFeed">
+            <%for(let feed of user.FeedBack){%>
+                <div id="feedback">
+                    <p><%=feed.feedback%></p>
+                    <p>Rate : <%=feed.rate%></p>
+                </div>
+            <%}%>
+        </div>
+    </div>
+    
+
+    <!-- Feedback box ... -->
+    <div id="EmployeeFeedbackRequest">
+        <h3>FeedBack</h3>
+        <form id="AddingNewFeed">
+               <p><label>Employee Name :</label></p>
+                <select name="id" class="habitStatus">
+                <% for(let val of allEmp){%>
+                    <%if(user.UserName !== val.Username){%>
+                        <option value="<%=val.id%>"><%=val.Username%></option>
+                    <%}%>
+                <%}%>
+                    </select>
+                    <p>Feedback :</p><p><textarea id="feedbox" name="feedback" required="true"></textarea></p>
+                    <p>Rating : <input type="number" name="rate" min="0" max="5" required="true"></p>
+                    <button type="submit">Submit</button>
+        </form>
+       
+    </div>
+</div>
+<!-- LINKING WITH JAVACRIPT FILE -->
+<script src="/js/employee.js"></script>

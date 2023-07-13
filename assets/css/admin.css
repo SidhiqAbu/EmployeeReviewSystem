@@ -1,0 +1,96 @@
+body{
+  background-image: url('../staticImages/paper.jpg');
+}
+#bodyContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+  height: 85vh;
+}
+#bodyContainer #EnployeesList {
+  width: 70%;
+  margin: 20px;
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  background-color:whitesmoke;
+}
+#EnployeesList::-webkit-scrollbar{
+  display: none;
+}
+#bodyContainer #EmployeeRequest {
+  width: 25%;
+  border: 4px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+#EmployeeRequest::-webkit-scrollbar{
+  display: none;
+}
+.singleRequest{
+  border-radius: 10px;
+  background-color:non;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2px;
+  border: 3px solid lightgrey;
+}
+
+.singleRequest1{
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  border: 3px solid lightgrey;
+}
+.inner1{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+ .DeleteEmployeeBtn{
+  cursor: pointer;
+  padding: 1px;
+  height: fit-content;
+  margin: 10px;
+  border: none;
+}
+
+.Update{
+  cursor: pointer;
+  padding: 0px;
+  height: fit-content;
+  margin: 10px;
+  border: none;
+} 
+
+.RegistrationForm{
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid white;
+  flex-wrap: wrap;
+}
+
+#updatebtn{
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+}
+
+.AddEmployeeBtn{
+  cursor: pointer;
+  padding: 2px;
+  height: fit-content;
+  border: none;
+  background-color: lightgrey;
+}
+/*# sourceMappingURL=admin.css.map */
